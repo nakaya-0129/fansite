@@ -3,6 +3,9 @@
  <head>
   <meta charset = "utf-8">
   <meta name = "viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../static/css/reset.css" media="all">
   <link rel="stylesheet" href="../static/css/blog.css" media="all">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -54,14 +57,14 @@ $(".slide__arrow__left").on("click",function(){
   <header>
     <div class="header__bar">
      <div class="header__title">
-      <h1><a href="../home.html">清水里香 FAN SITE</a></h1>
+      <h1><a href="../home.html">TAKEO FAN SITE</a></h1>
      </div>
      <div class="header__content">
       <ul class="header__lists">
        <li><a href="../home.html">TOP</a></li>
-       <li><a href="#">JEMINI</a></li>
-       <li><a href="#">SUPPORT</a></li>
        <li><a href="blog_list.html">BLOG</a></li>
+       <li><a href="#">LOGIN</a></li>
+       <li><a href="#">LOGOUT</a></li>
       </ul>
      </div>     
      <div class="header__hidden__content">
@@ -74,9 +77,9 @@ $(".slide__arrow__left").on("click",function(){
      <div class="header__menu__navi">
        <ul class="navi__menu">
         <li class="navi__item"><a href="../home.html">TOP</a></li>
-        <li class="navi__item"><a href="#">JEMINI</a></li>
-        <li class="navi__item"><a href="#">SUPPORT</a></li>
         <li class="navi__item"><a href="blog_list.html">BLOG</a></li>
+        <li class="navi__item"><a href="#">LOGIN</a></li>
+        <li class="navi__item"><a href="#">LOGOUT</a></li>
        </ul>
      </div>
     </div>
@@ -96,12 +99,12 @@ $(".slide__arrow__left").on("click",function(){
       </div>
      </div>
      <div class="first__view__box">
-      <h3 class="site__name">清水里香<span>FAN SITE<span></h3>
-      <p>清水里香のファンサイトです。<br>
-         清水里香のこれからを応援しよう。</p>
+      <h3 class="site__name">TAKEO<span>FAN SITE<span></h3>
+      <p>TAKEOのファンサイトです。<br>
+         TAKEOの近況をUPします！</p>
      </div>
      <div class="talent__name__box">
-      <h2 class="talent__name">清水里香</h2>
+      <h2 class="talent__name">TAKEO</h2>
      </div>
      <div class="first__view__btn">
        <div class="btn__name"><a href="#"><p>READ BRAND STORY<span>→</span></a></p></div>
@@ -114,89 +117,79 @@ $(".slide__arrow__left").on("click",function(){
      <p>ブログ</p>
     </div>
     <ul class=blog__navi__tag>
-     <li class="jemini__tag"><a href="#"><p>JEMINI</p></a></li>
-     <li class="offshot__tag"><a href="#"><p>オフショット</p></a></li>
+     <li class="jemini__tag"><a href="#"><p>インスタ</p></a></li>
+     <li class="offshot__tag"><a href="#"><p>プライベート</p></a></li>
      <li class="event__tag"><a href="#"><p>イベント</p></a></li>
-     <li class="live__tag"><a href="#"><p>ライブ</p></a></li>
-     <li class="shooting__tag"><a href="#"><p>撮影</p></a></li>
-     <li class="member__tag"><a href="#"<p>会員限定</p></a></li>
-     <li class="member__tag"><a href="#"<p>会員限定</p></a></li>
-     <li class="member__tag"><a href="#"<p>会員限定</p></a></li>
+     <li class="live__tag"><a href="#"><p>旅行</p></a></li>
+     <li class="shooting__tag"><a href="#"><p>食事</p></a></li>
      <li class="member__tag"><a href="#"<p>会員限定</p></a></li>
     </ul>
     <div class="blog__poto__box">
      <ul class="blog__poto__index">
-      <li><a href ="login.html">
+      <li>
        <p class="blog__image" style="background-image:url(../static/images/img3.jpg);"></p>
-       <p class="blog__title">JEMINIの撮影でした！</p> 
-       <p class="blog__story">JEMINI AUTUM COLLECTIONよろしくお願いします！</p>
+       <p class="blog__title">IN 沖縄</p> 
+       <p class="blog__story">沖縄の日差しを感じて。</p>
        <p class="blog__day">2021.07.18</p>
-       <div class="jemini__tag"><p>JEMINI</p></div>
-      </a>
+       <div class="jemini__tag"><p>旅行</p></div>
       </li>
-      <li><a href="login.html">
+      <li>
        <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
-       <p class="blog__title">撮影のオフショット</p>
-       <p class="blog__story">撮影のオフショットを公開します。</p>
+       <p class="blog__title">オフショット</p>
+       <p class="blog__story">オフショットを公開します。</p>
        <p class="blog__day">2021.07.17</p>
-       <div class="offshot__tag"><p>オフショット</p></div>
-      </a>
+       <div class="offshot__tag"><p>プライベート</p></div>
       </li>
-      <li><a href="login.html">
+      <li>
        <p class="blog__image" style="background-image:url(../static/images/img9.jpg);"></span>
-       <p class="blog__title">オンラインイベント</p>
-       <p class="blog__story">オンラインイベント開催しました。ありがとうございました。</p>
+       <p class="blog__title">IN 草津</p>
+       <p class="blog__story">草津温泉最高！</p>
        <p class="blog__day">2021.07.16</p>
-       <div class="event__tag"><p>イベント</p></div>
-      </a>
+       <div class="event__tag"><p>旅行</p></div>
       </li>
-      <li><a href="login.html">
+      <li>
        <p class="blog__image" style="background-image:url(../static/images/img12.jpg);"></p>
        <p class="blog__title">オフショット</p>
        <p class="blog__story">オフショット一挙公開！</p>
        <p class="blog__day">2021.07.15</p>
        <div class="offshot__tag"><p>オフショット</p></div>
-      </a>
       </li>
-      <li><a href="login.html">
-       <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
-       <p class="blog__title">オンラインイベント</p>
-       <p class="blog__story">オンラインイベント盛り上がりました！</p>
+      <li>
+       <p class="blog__image" style="background-image:url(../static/images/img5.jpg);"></p>
+       <p class="blog__title">IN 千葉</p>
+       <p class="blog__story">インスタ映え狙いました（笑）</p>
        <p class="blog__day">2021.07.14</p>
-       <div class="event__tag">イベント</p></div>
-      </a>
+       <div class="event__tag">インスタ</p></div>
       </li>
       <li><a href="login.html">
-       <p class="blog__image" style="background-image:url(../static/images/img9.jpg);"></p>
-       <p class="blog__title">インスタライブ</p>
-       <p class="blog__story">インスタライブしました！ありがとうございました。</p>
+       <p class="blog__image" style="background-image:url(../static/images/img10.jpg);"></p>
+       <p class="blog__title">インスタ</p>
+       <p class="blog__story">インスタグラムから人気のショットを公開します！</p>
        <p class="blog__day">2021.07.13</p>
-       <div class="insta__tag">instagram</p></div>
+       <div class="insta__tag">会員限定</p></div>
       </a>
       </li>
       <li><a href="login.html">
-       <p class="blog__image" style="background-image:url(../static/images/img16.jpg);"></p>
-       <p class="blog__title">ライブ</p>
-       <p class="blog__story">ライブ開催しました。ありがとうございました！</p>
+       <p class="blog__image" style="background-image:url(../static/images/img13.jpg);"></p>
+       <p class="blog__title">愛車公開</p>
+       <p class="blog__story">運転が大好きなので、遠出もOK！</p>
        <p class="blog__day">2021.07.12</p>
-       <div class="live__tag">ライブ</p></div>
+       <div class="live__tag">会員限定</p></div>
       </a>
       </li>
-      <li><a href="login.html">
-       <p class="blog__image" style="background-image:url(../static/images/img9.jpg);"></p>
-       <p class="blog__title">今日のお昼ご飯</p>
-       <p class="blog__story">今日のお昼はハンバーガーでした！</p>
+      <li>
+       <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
+       <p class="blog__title">甘党です</p>
+       <p class="blog__story">甘いものに目がないので！</p>
        <p class="blog__day">2021.07.11</p>
-       <div class="menu__tag">ごはん</p></div>
-      </a>
+       <div class="menu__tag">食事</p></div>
       </li>
-      <li><a href="login.html">
-       <p class="blog__image" style="background-image:url(../static/images/img8.jpg);"></p>
-       <p class="blog__title">雑誌撮影</p>
-       <p class="blog__story">雑誌の撮影でした！</p>
+      <li>
+       <p class="blog__image" style="background-image:url(../static/images/img11.jpg);"></p>
+       <p class="blog__title">IN 海外</p>
+       <p class="blog__story">海外旅行、コロナが落ち着いたらまた行きたい。</p>
        <p class="blog__day">2021.07.10</p>
-       <div class="poto__tag">撮影</p></div>
-      </a>
+       <div class="poto__tag">旅行</p></div>
       </li>
      </ul>
     <div>
@@ -204,7 +197,7 @@ $(".slide__arrow__left").on("click",function(){
   </main>
   <footer>
    <div class="footer__list">
-    <h2>清水里香 FAN SITE</h2>
+    <h2>TAKEO FAN SITE</h2>
    </div>
   </footer>
  </div>

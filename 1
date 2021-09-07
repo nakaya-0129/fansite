@@ -24,7 +24,7 @@
   $(function(){
      var backgroundRandom = function(){
          var number = Math.floor(Math.random()* images.length);
-         var selectedImg = images[number];
+         var selectedImg = images(number);
          $('.image__left').css('background-image',selectedImg);
      };
      setInterval(backgroundRandom, 2000);

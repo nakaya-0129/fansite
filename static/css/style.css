@@ -72,43 +72,44 @@ header .header__bar .header__menu__navi{
   position:relative;
 }
 #first__view .image__content{
-  max-width:1500px;
-  height:100%;
+  max-width:2000px;
+  height:520px;
   display:flex;
 }
 #first__view .image__content .image__left{
-  width:30%;
-  height:520px;
-  margin-left:6%;
-  background-image:url("../images/img1.jpg");
-  background-position:center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  z-index:-1;
+   width:30%;
+   height:520px;
+   margin-left:6%;
+   background-position:center center;
+   background-size:cover;
+   background-repeat:no-repeat;
+   z-index:-1;
 }
 #first__view .image__content .image__center{
-  width:30%;
-  height:520px;
-  margin-left:20px;
-  background-image:url("../images/img7.jpg");
-  background-position:center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  opacity:0.6;
-  z-index:-1;
+    width:30%;
+    height:520px;
+    margin-left:20px;
+    background-image:url("../images/img11.jpg");
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.6;
+    z-index:-1;
 }
 #first__view .image__content .image__right{
-  width:35%;
-  height:520px;
-  margin-left:40px;
-  background-image:url("../images/img3.jpg");
-  background-position:center center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  opacity:0.6;
-  z-index:-1;
-}
+    width:35%;
+    height:520px;
+    margin-left:20px;
+    background-image:url("../images/img6.jpg");
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.6;
+    z-index:-1;
+ }
+
 #first__view .first__view__box{
+  opacity:0.6;
   position:absolute;
   top:150px;
   margin:auto;
@@ -207,10 +208,6 @@ main .topic__news{
   height:100%;
   margin-bottom:70px;
   position:relative;
-  background-image:url("../images/JEMINI.png");
-  background-position:bottom 0px right 0px;
-  background-size:contain;
-  background-repeat:no-repeat;
 }
 main .topic__news .topic__title{
   width:200px;
@@ -593,10 +590,6 @@ main .topic__news .topic__title{
 main .topic__news .topic__info{
   width:100%;
   margin:auto;
-  background-image:url("../images/JEMINI.png");
-  background-position:bottom 0px right 120px;
-  background-size:60% 30%;
-  background-repeat:no-repeat;
 }
 main .topic__news .topic__info .topic__info__lists .topic__text .topic__day{
  margin-left:-40px; 
