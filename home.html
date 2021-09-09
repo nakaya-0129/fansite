@@ -20,16 +20,17 @@
       $("body").toggleClass("noscroll");
         });
    });
-  var images =['url(static/images/img1.jpg)','url(static/images/img11.jpg)','url(static/images/img6.jpg)' ];
-  $(function(){
-     var backgroundRandom = function(){
-         var number = Math.floor(Math.random()* images.length);
-         var selectedImg = images[number];
-         $('.image__left').css('background-image',selectedImg);
-     };
-     setInterval(backgroundRandom, 2000);
-  });
-  
+  var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img3.jpg)' ];  // ランダム表示させたい画像のパス
+
+    $(function(){
+      var backgroundRandom = function(){
+        var number = Math.floor(Math.random() * images.length); // 0~3の数値を算出
+        var selectedImg = images[number]; // 算出された数値を元に、1行目の配列から取り出す
+        $('.image__left').css('background-image',selectedImg); // cssにランダムに選ばれた画像を背景設定する
+      };
+      setInterval(backgroundRandom, 1500);  // 1000msごとにランダム切り替えを繰り返す
+    });
+    
 </script>
 </head>
 <body>
