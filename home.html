@@ -20,7 +20,7 @@
       $("body").toggleClass("noscroll");
         });
    });
-  var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img3.jpg)' ];  // ランダム表示させたい画像のパス
+  var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img3.jpg)','url(static/images/img10.jpg)','url(static/images/img13.jpg)','url(static/images/img2.jpg)','url(static/images/img1.jpg)' ];  // ランダム表示させたい画像のパス
 
     $(function(){
       var backgroundRandom = function(){
@@ -28,7 +28,7 @@
         var selectedImg = images[number]; // 算出された数値を元に、1行目の配列から取り出す
         $('.image__left').css('background-image',selectedImg); // cssにランダムに選ばれた画像を背景設定する
       };
-      setInterval(backgroundRandom, 1500);  // 1000msごとにランダム切り替えを繰り返す
+      setInterval(backgroundRandom, 6000);  // 2000msごとにランダム切り替えを繰り返す
     });
     
 </script>
@@ -80,9 +80,9 @@
      </div>
     </div>
     <div class="first__view__box">
-     <h3 class="site__name">Takeo<span>FAN SITE<span></h3>
-     <p>Takeoのファンサイト<br>
-         Takeoの近況をUPします！</p>
+     <h3 class="site__name">Takeo<span>offical<span></h3>
+     <p>TAKEOのオフィシャルサイト<br>
+         プライベートショットを公開します！</p>
     </div>
     <div class="talent__name__box">
      <h2 class="talent__name">Takeo</h2>
@@ -94,8 +94,8 @@
   <main>
    <div class="topic__news">
      <div class="topic__title">
-       <h2>NEWS</h2>
-       <p>最新情報</p>
+       <h2>HISTORY</h2>
+       <p>TAKEO offical</p>
      </div>
      <div class="topic__info">
       <ul class="topic__info__lists">
@@ -108,16 +108,16 @@
         <p class="topic__content">Youtube登録者500人達成！</p>
        </li></a>
        <a href="#"><li class="topic__text">
-         <p class="topic__day">2018.08.01</p>
-         <p class="topic__content">海外旅行で世界一周を試みる！</p>
+         <p class="topic__day">2020.01.01</p>
+         <p class="topic__content">TAKEsutguram開設！</p>
        </li></a>
        <a href="#"><li class="topic__text">
         <p class="topic__day">2020.01.01</p>
-        <p class="topic__content">Takestgram開設</p>
+        <p class="topic__content">TAKEsutguram フォロワー1000人突破！</p>
        </li></a>
        <a href="#"><li class="topic__text">
         <p class="topic__day">2021.10.14</p>
-        <p class="topic__content">Takestaguram フォロワー1000人突破！</p>
+        <p class="topic__content">Takeo offical sate開設！</p>
        </li></a>
        <div class="view__btn"><a href="#">VIEW MORE<span>></span></a></div>
       </ul>
@@ -170,7 +170,8 @@
   </main>
   <footer>
    <div class="footer__list">
-    <h2>Takeo FAN SITE</h2>
+    <h2>TAKEO OFFICAL SITE </h2>
+    <h2>©︎2021 TAKEOoffical lnc</h2>
    </div>
   </footer>
  </div>
