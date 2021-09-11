@@ -93,6 +93,7 @@ header .header__bar .header__menu__navi{
   width:100%;
   height:100%;
   background-color:#fff;
+  opacity:0.6;
   background-position:center center;
   background-size:cover;
   animation:imgAnimation 6000ms infinite;
@@ -400,13 +401,26 @@ main .blog__contents .blog__box .view__btn{
 }
 main .blog__contents .blog__box .view__btn span{
   margin-left:10px;
-}    
+}
 main .funclub__box{
   margin-top:200px;
   margin:auto;
   width:720px;
   height:265px;
-  background: linear-gradient(to right,#FF65A1 5%, #FDC59B );
+  opacity:0.8;
+  background-color: #2b1d1d;
+}
+
+main .funclub__box:hover{
+  animation-name: boxAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode:forwards;
+}
+@keyframes boxAnimation{
+    100%{
+       opacity:1;
+       background: linear-gradient(to right,#FF65A1 5%, #FDC59B );
+    }
 }
 main .funclub__box .funclub__sentence {
   margin-bottom:20px;
@@ -461,6 +475,7 @@ footer .footer__list{
   height:400px;
   background-color:#000;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
 }
@@ -469,8 +484,14 @@ footer .footer__list h2{
   font-size:24px;
   color:#fff;
   text-align:center;
-}
-   
+  margin-bottom:5px;
+}   
+footer .footer__list p{
+  font-size:12px;
+  color:#f4ebeb;
+  text-align:center;
+  opacity:0.6;
+}    
 @media screen and (max-width:1150px){
 #first__view .first__view__box{
   top:140px;
