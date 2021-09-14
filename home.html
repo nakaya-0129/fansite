@@ -19,6 +19,12 @@
       $(".header__menu__navi").fadeToggle(100);
       $("body").toggleClass("noscroll");
         });
+    $(".funclub__box").on("mouseover",function(){
+      $(".join__btn").addClass("active");
+     });
+   $(".funclub__box").on("mouseout",function(){
+      $(".join__btn").removeClass("active");      
+     });
    });
   var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img3.jpg)','url(static/images/img10.jpg)','url(static/images/img13.jpg)','url(static/images/img2.jpg)','url(static/images/img1.jpg)' ];  // ランダム表示させたい画像のパス
 

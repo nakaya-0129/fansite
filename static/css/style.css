@@ -453,6 +453,7 @@ main .funclub__box .funclub__sentence .bottom__sentence{
 
    
 main .funclub__box .join__btn{
+  opacity:0;
   width:150px;
   height:34px;
   background-color:#fff;
@@ -465,6 +466,20 @@ main .funclub__box .join__btn p{
   padding-top:10px;
   color:#FF65A1;
 } 
+main .funclub__box .join__btn.active{
+  opacity:1;
+  animation: btnAnimation 0.5s;
+}
+@keyframes btnAnimation{
+  0%{
+     opacity:0.3;
+     transform:translateY(20px);
+  }
+  100%{
+     opacity:1;
+     transform:translateY(0px);
+  }
+}
 footer{
   margin-top:100px;
   width:100%;
