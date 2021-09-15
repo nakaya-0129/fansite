@@ -16,39 +16,7 @@
       $(".humburger__menu").toggleClass("active");
       $(".header__menu__navi").fadeToggle(100);
       $("body").toggleClass("noscroll");
-        });
-   
-$(".slide__arrow__left").on("click",function(){
-        if($(this).hasClass('slide__first')==false && $(".image__left").hasClass('slide__show')==false){
-          $(this).addClass('slide__first');      
-          $(".image__left").css("background-image","url(../static/images/img7.jpg)");
-          $(".image__center").css("background-image","url(../static/images/img3.jpg)");
-          $(".image__right").css("background-image","url(../static/images/img1.jpg)");
-        }else if($(this).hasClass('slide__first')){
-          $(this).removeClass('slide__first');
-          $(".image__left").css("background-image","url(../static/images/img3.jpg)").addClass('slide__show');
-          $(".image__center").css("background-image","url(../static/images/img1.jpg)");
-          $(".image__right").css("background-image","url(../static/images/img7.jpg)");
-        }else if($(".image__left").hasClass('slide__show')){
-          $(".image__left").css("background-image","url(../static/images/img1.jpg)").removeClass('slide__show');;
-          $(".image__center").css("background-image","url(../static/images/img7.jpg)");
-          $(".image__right").css("background-image","url(../static/images/img3.jpg)");
-         }
-       }); 
-        $(".slide__arrow__right").on("click",function(){
-         if($('.slide__arrow__left').hasClass('slide__first')){
-          $('.slide__arrow__left').removeClass('slide__first');      
-          $(".image__left").css("background-image","url(../static/images/img1.jpg)");
-          $(".image__center").css("background-image","url(../static/images/img7.jpg)");
-          $(".image__right").css("background-image","url(../static/images/img3.jpg)");
-         }else if($(".image__left").hasClass('slide__show')){
-        $(".slide__arrow__left").addClass('slide__first');
-          $(".image__left").css("background-image","url(../static/images/img7.jpg)").removeClass('slide__show'); 
-          $(".image__center").css("background-image","url(../static/images/img3.jpg)");
-          $(".image__right").css("background-image","url(../static/images/img1.jpg)");
-         }else{  
-         }
-      });
+        });   
    });
 </script>
 </head>
@@ -87,7 +55,6 @@ $(".slide__arrow__left").on("click",function(){
     <div id="first__view">
      <div class="image__content">
       <div class="image__left"></div>
-      <div class="image__center"></div>
       <div class="image__right"></div>
      </div>
      <div class="slide__arrow">
@@ -117,7 +84,7 @@ $(".slide__arrow__left").on("click",function(){
      <p>ブログ</p>
     </div>
     <ul class=blog__navi__tag>
-     <li class="jemini__tag"><a href="#"><p>インスタ</p></a></li>
+     <li class="insta__tag"><a href="#"><p>インスタ</p></a></li>
      <li class="offshot__tag"><a href="#"><p>プライベート</p></a></li>
      <li class="event__tag"><a href="#"><p>イベント</p></a></li>
      <li class="live__tag"><a href="#"><p>旅行</p></a></li>
@@ -131,7 +98,7 @@ $(".slide__arrow__left").on("click",function(){
        <p class="blog__title">IN 沖縄</p> 
        <p class="blog__story">沖縄の日差しを感じて。</p>
        <p class="blog__day">2021.07.18</p>
-       <div class="jemini__tag"><p>旅行</p></div>
+       <div class="live__tag"><p>旅行</p></div>
       </li>
       <li>
        <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
@@ -159,14 +126,14 @@ $(".slide__arrow__left").on("click",function(){
        <p class="blog__title">IN 千葉</p>
        <p class="blog__story">インスタ映え狙いました（笑）</p>
        <p class="blog__day">2021.07.14</p>
-       <div class="event__tag">インスタ</p></div>
+       <div class="insta__tag">インスタ</p></div>
       </li>
       <li><a href="login.html">
        <p class="blog__image" style="background-image:url(../static/images/img10.jpg);"></p>
        <p class="blog__title">インスタ</p>
        <p class="blog__story">インスタグラムから人気のショットを公開します！</p>
        <p class="blog__day">2021.07.13</p>
-       <div class="insta__tag">会員限定</p></div>
+       <div class="member__tag">会員限定</p></div>
       </a>
       </li>
       <li><a href="login.html">
@@ -174,7 +141,7 @@ $(".slide__arrow__left").on("click",function(){
        <p class="blog__title">愛車公開</p>
        <p class="blog__story">運転が大好きなので、遠出もOK！</p>
        <p class="blog__day">2021.07.12</p>
-       <div class="live__tag">会員限定</p></div>
+       <div class="member__tag">会員限定</p></div>
       </a>
       </li>
       <li>
@@ -198,6 +165,7 @@ $(".slide__arrow__left").on("click",function(){
   <footer>
    <div class="footer__list">
     <h2>TAKEO FAN SITE</h2>
+    <p>©︎2021 TAKEO OFFCIAL All Rights Reserved.</p> 
    </div>
   </footer>
  </div>
