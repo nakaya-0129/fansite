@@ -84,7 +84,7 @@ header .header__bar .header__menu__navi{
   z-index:-1;
 }
 #first__view .image__content .image__right{
-  width:40%;
+  width:50%;
   height:520px;
   margin-left:20px;
   background-image:url("../images/img3.jpg");
@@ -354,6 +354,44 @@ main .blog__poto__box .blog__poto__index li .blog__story {
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
 }
+main .blog__contents .blog__poto__box .blog__poto__index .menu__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+} 
+
+main .blog__contents .blog__poto__box .blog__poto__index .live__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+} 
+main .blog__contents .blog__poto__box .blog__poto__index .offshot__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+}    
+main .blog__contents .blog__poto__box .blog__poto__index .insta__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+}    
+main .blog__contents .blog__poto__box .blog__poto__index .member__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+
+}    
+main .blog__contents .blog__poto__box .blog__poto__index .event__box.outview{
+  display:none;
+  opacity:0;
+  visibility:hidden;
+
+}    
+main .blog__contents .blog__poto__box .blog__poto__index .shooting__box.outview{
+   display:none;
+   opacity:0;
+   visibility:hidden;
+}    
 main .blog__poto__box .blog__poto__index li .blog__day {
    font-size: 10px;
    color: rgb(187, 187, 187);

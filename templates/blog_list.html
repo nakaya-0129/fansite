@@ -3,6 +3,8 @@
  <head>
   <meta charset = "utf-8">
   <meta name = "viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="description" content="押田武雄のブログ一覧です｜お気に入りのショットを公開しています。">
+  <title>TAKEO BLOG</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
@@ -18,6 +20,17 @@
       $("body").toggleClass("noscroll");
         });   
    });
+  $(function(){
+    $(".insta__tag").on('click',function(){
+       $(".insta__tag").removeClass("outview");
+       $(".live__box").addClass("outview");
+       $(".offshot__box").addClass("outview");
+       $(".event__box").addClass("outview");
+       $(".member__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".menu__box").addClass("outview");
+    });
+  })
 </script>
 </head>
 <body>
@@ -31,8 +44,8 @@
       <ul class="header__lists">
        <li><a href="../home.html">TOP</a></li>
        <li><a href="blog_list.html">BLOG</a></li>
-       <li><a href="#">LOGIN</a></li>
-       <li><a href="#">LOGOUT</a></li>
+       <li><a href="#">LOOK BOOK</a></li>
+       <li><a href="login.html">LOGIN</a></li>
       </ul>
      </div>     
      <div class="header__hidden__content">
@@ -46,8 +59,8 @@
        <ul class="navi__menu">
         <li class="navi__item"><a href="../home.html">TOP</a></li>
         <li class="navi__item"><a href="blog_list.html">BLOG</a></li>
-        <li class="navi__item"><a href="#">LOGIN</a></li>
-        <li class="navi__item"><a href="#">LOGOUT</a></li>
+        <li class="navi__item"><a href="#">LOOK BOOK</a></li>
+        <li class="navi__item"><a href="login.html">LOGIN</a></li>
        </ul>
      </div>
     </div>
@@ -84,51 +97,51 @@
      <p>ブログ</p>
     </div>
     <ul class=blog__navi__tag>
-     <li class="insta__tag"><a href="#"><p>インスタ</p></a></li>
-     <li class="offshot__tag"><a href="#"><p>プライベート</p></a></li>
-     <li class="event__tag"><a href="#"><p>イベント</p></a></li>
-     <li class="live__tag"><a href="#"><p>旅行</p></a></li>
-     <li class="shooting__tag"><a href="#"><p>食事</p></a></li>
-     <li class="member__tag"><a href="#"<p>会員限定</p></a></li>
+     <li class="insta__tag"><p>インスタ</p></li>
+     <li class="offshot__tag"><p>プライベート</p></li>
+     <li class="event__tag"><p>イベント</p></li>
+     <li class="live__tag"><p>旅行</p></li>
+     <li class="shooting__tag"><p>食事</p></li>
+     <li class="member__tag"><p>会員限定</p></li>
     </ul>
     <div class="blog__poto__box">
      <ul class="blog__poto__index">
-      <li>
+      <li class="live__box">
        <p class="blog__image" style="background-image:url(../static/images/img3.jpg);"></p>
        <p class="blog__title">IN 沖縄</p> 
        <p class="blog__story">沖縄の日差しを感じて。</p>
        <p class="blog__day">2021.07.18</p>
        <div class="live__tag"><p>旅行</p></div>
       </li>
-      <li>
+      <li class="offshot__box">
        <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
        <p class="blog__title">オフショット</p>
        <p class="blog__story">オフショットを公開します。</p>
        <p class="blog__day">2021.07.17</p>
        <div class="offshot__tag"><p>プライベート</p></div>
       </li>
-      <li>
+      <li class="event__box">
        <p class="blog__image" style="background-image:url(../static/images/img9.jpg);"></span>
        <p class="blog__title">IN 草津</p>
        <p class="blog__story">草津温泉最高！</p>
        <p class="blog__day">2021.07.16</p>
        <div class="event__tag"><p>旅行</p></div>
       </li>
-      <li>
+      <li class="offshot__box">
        <p class="blog__image" style="background-image:url(../static/images/img12.jpg);"></p>
        <p class="blog__title">オフショット</p>
        <p class="blog__story">オフショット一挙公開！</p>
        <p class="blog__day">2021.07.15</p>
        <div class="offshot__tag"><p>オフショット</p></div>
       </li>
-      <li>
+      <li class="insta__box">
        <p class="blog__image" style="background-image:url(../static/images/img5.jpg);"></p>
        <p class="blog__title">IN 千葉</p>
        <p class="blog__story">インスタ映え狙いました（笑）</p>
        <p class="blog__day">2021.07.14</p>
        <div class="insta__tag">インスタ</p></div>
       </li>
-      <li><a href="login.html">
+      <li class="member__box"<a href="login.html">
        <p class="blog__image" style="background-image:url(../static/images/img10.jpg);"></p>
        <p class="blog__title">インスタ</p>
        <p class="blog__story">インスタグラムから人気のショットを公開します！</p>
@@ -136,7 +149,7 @@
        <div class="member__tag">会員限定</p></div>
       </a>
       </li>
-      <li><a href="login.html">
+      <li class="member__box"><a href="login.html">
        <p class="blog__image" style="background-image:url(../static/images/img13.jpg);"></p>
        <p class="blog__title">愛車公開</p>
        <p class="blog__story">運転が大好きなので、遠出もOK！</p>
@@ -144,19 +157,19 @@
        <div class="member__tag">会員限定</p></div>
       </a>
       </li>
-      <li>
+      <li class="menu__box">
        <p class="blog__image" style="background-image:url(../static/images/img6.jpg);"></p>
        <p class="blog__title">甘党です</p>
        <p class="blog__story">甘いものに目がないので！</p>
        <p class="blog__day">2021.07.11</p>
        <div class="menu__tag">食事</p></div>
       </li>
-      <li>
+      <li class="live__box">
        <p class="blog__image" style="background-image:url(../static/images/img11.jpg);"></p>
        <p class="blog__title">IN 海外</p>
        <p class="blog__story">海外旅行、コロナが落ち着いたらまた行きたい。</p>
        <p class="blog__day">2021.07.10</p>
-       <div class="poto__tag">旅行</p></div>
+       <div class="live__tag">旅行</p></div>
       </li>
      </ul>
     <div>
