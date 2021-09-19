@@ -22,7 +22,7 @@
    });
   $(function(){
     $(".insta__tag").on('click',function(){
-       $(".insta__tag").removeClass("outview");
+       $(".insta__box").removeClass("outview");
        $(".live__box").addClass("outview");
        $(".offshot__box").addClass("outview");
        $(".event__box").addClass("outview");
@@ -30,7 +30,61 @@
        $(".shooting__box").addClass("outview");
        $(".menu__box").addClass("outview");
     });
-  })
+  $(".event__tag").on('click',function(){
+       $(".event__box").removeClass("outview");
+       $(".live__box").addClass("outview");
+       $(".offshot__box").addClass("outview");
+       $(".insuta__box").addClass("outview");
+       $(".member__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".menu__box").addClass("outview");
+    });
+  $(".offshot__tag").on('click',function(){
+       $(".offshot__box").removeClass("outview");
+       $(".live__box").addClass("outview");
+       $(".insta__box").addClass("outview");
+       $(".event__box").addClass("outview");
+       $(".member__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".menu__box").addClass("outview");
+    });
+  $(".shooting__tag").on('click',function(){
+       $(".menu__box").removeClass("outview");
+       $(".live__box").addClass("outview");
+       $(".offshot__box").addClass("outview");
+       $(".event__box").addClass("outview");
+       $(".member__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".insta__box").addClass("outview");
+    });
+  $(".live__tag").on('click',function(){
+       $(".live__box").removeClass("outview");
+       $(".insta__box").addClass("outview");
+       $(".offshot__box").addClass("outview");
+       $(".event__box").addClass("outview");
+       $(".member__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".menu__box").addClass("outview");
+    });
+  $(".member__tag").on('click',function(){
+       $(".member__box").removeClass("outview");
+       $(".live__box").addClass("outview");
+       $(".offshot__box").addClass("outview");
+       $(".event__box").addClass("outview");
+       $(".insta__box").addClass("outview");
+       $(".shooting__box").addClass("outview");
+       $(".menu__box").addClass("outview");
+    });
+  $(".inview__tag").on('click',function(){
+       $(".member__box").removeClass("outview");
+       $(".live__box").removeClass("outview");
+       $(".offshot__box").removeClass("outview");
+       $(".event__box").removeClass("outview");
+       $(".insta__box").removeClass("outview");
+       $(".shooting__box").removeClass("outview");
+       $(".menu__box").removeClass("outview");
+    });
+  });
 </script>
 </head>
 <body>
@@ -38,7 +92,7 @@
   <header>
     <div class="header__bar">
      <div class="header__title">
-      <h1><a href="../home.html">TAKEO OFFICAL</a></h1>
+      <h1><a href="../home.html">TAKEO OFFICAL BLOG</a></h1>
      </div>
      <div class="header__content">
       <ul class="header__lists">
@@ -94,7 +148,7 @@
    <div class="blog__contents">
     <div class="blog__top">
      <h2>BLOG</h2>
-     <p>ブログ</p>
+     <p>TAKEO OFFICAL BLOG</p>
     </div>
     <ul class=blog__navi__tag>
      <li class="insta__tag"><p>インスタ</p></li>
@@ -103,6 +157,7 @@
      <li class="live__tag"><p>旅行</p></li>
      <li class="shooting__tag"><p>食事</p></li>
      <li class="member__tag"><p>会員限定</p></li>
+     <li class="inview__tag"><p>全表示</p></li>
     </ul>
     <div class="blog__poto__box">
      <ul class="blog__poto__index">

@@ -33,13 +33,13 @@ header .header__bar{
  align-items:center;
 }
 header .header__bar .header__title h1{
-  width:203px;
+  width:auto;
   height:35px;
   font-size:24px;
   margin-left:35px;
 }
 header .header__bar .header__content{
-  width:500px;
+  width:auto;
   height:13px;
   margin-right:110px;
 }
@@ -87,7 +87,7 @@ header .header__bar .header__menu__navi{
   width:50%;
   height:520px;
   margin-left:20px;
-  background-image:url("../images/img3.jpg");
+  background-image:url("../images/img13.jpg");
   background-position:center center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -286,6 +286,21 @@ main .blog__navi__tag .shooting__tag {
   border:1px solid #FF1493;
   border-radius: 3px;
 }
+main .blog__navi__tag .inview__tag {
+  width: 60px;
+  height: 30px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border:1px solid #FF1493;
+  border-radius: 3px;
+}
+main .blog__navi__tag .inview__tag:hover{
+  background-color:#FF1493;
+  color:#fff;
+}    
 main .blog__navi__tag .shooting__tag:hover{
   background-color:#FF1493;
   color:#fff;

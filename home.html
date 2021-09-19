@@ -29,7 +29,7 @@
       $(".join__btn").removeClass("active");      
      });
    });
-  var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img3.jpg)','url(static/images/img10.jpg)','url(static/images/img13.jpg)','url(static/images/img2.jpg)','url(static/images/img1.jpg)' ];  // ランダム表示させたい画像のパス
+  var images = [ 'url(static/images/img6.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img10.jpg)','url(static/images/img13.jpg)','url(static/images/img2.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)' ];  // ランダム表示させたい画像のパス
 
     $(function(){
       var backgroundRandom = function(){
@@ -37,7 +37,7 @@
         var selectedImg = images[number]; // 算出された数値を元に、1行目の配列から取り出す
         $('.image__left').css('background-image',selectedImg); // cssにランダムに選ばれた画像を背景設定する
       };
-      setInterval(backgroundRandom, 6000);  // 2000msごとにランダム切り替えを繰り返す
+      setInterval(backgroundRandom, 4000);  // 4000msごとにランダム切り替えを繰り返す
     });
     
 </script>
@@ -47,7 +47,7 @@
   <header>
     <div class="header__bar">
      <div class="header__title">
-      <h1><a href="home.html">TAKEO OFFICAL</a></h1>
+      <h1><a href="home.html">TAKEO OFFICAL FAN SATE</a></h1>
      </div>
      <div class="header__content">
       <ul class="header__lists">
@@ -80,20 +80,15 @@
       <div class="image__right"></div>
     </div>
     <div class="slide__arrow">
-     <div class="slide__arrow__left">
-      <
-     </div>
-     <div class="slide__arrow__right">
-      >
-     </div>
+      <p>READ MORE PROFILE<span>>></span></p>
     </div>
     <div class="first__view__box">
-     <h3 class="site__name">Takeo<span>offical<span></h3>
+     <h3 class="site__name">TAKEO<span>OFFCIAL<span></h3>
      <p>TAKEOのオフィシャルサイト<br>
          プライベートショットを公開します！</p>
     </div>
     <div class="talent__name__box">
-     <h2 class="talent__name">Takeo</h2>
+     <h2 class="talent__name">TAKEO</h2>
     </div>
     <div class="first__view__btn">
      <div class="btn__name"><a href="#"><p>READ MORE PROFILE<span>→</span></p></a></div>
@@ -103,7 +98,7 @@
    <div class="topic__news">
      <div class="topic__title">
        <h2>HISTORY</h2>
-       <p>TAKEO offical</p>
+       <p>TAKEO's STORY</p>
      </div>
      <div class="topic__info">
       <ul class="topic__info__lists">
@@ -135,7 +130,7 @@
     <div class="blog__box">
       <div class="blog__top__title">
        <h2>BLOG</h2>
-       <p>ブログ</p>
+       <p>TAKEO OFFICAL BLOG</p>
       </div>
       <ul class="blog__lists">
        <li>
