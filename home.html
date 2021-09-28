@@ -29,15 +29,18 @@
       $(".join__btn").removeClass("active");      
      });
    });
-  var images = [ 'url(static/images/img8.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img10.jpg)','url(static/images/img13.jpg)','url(static/images/img4.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)' ];  // ランダム表示させたい画像のパス
 
+  let images = [ 'url(static/images/img8.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img32.jpg)','url(static/images/img13.jpg)','url(static/images/img4.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)', 'url(static/images/img31.jpg)','url(static/images/img29.jpg)','url(static/images/img33.jpg)'];  // ランダム表示させたい画像のパス
+  let speed= 2000;
     $(function(){
-      var backgroundRandom = function(){
-        var number = Math.floor(Math.random() * images.length); // 0~3の数値を算出
-        var selectedImg = images[number]; // 算出された数値を元に、1行目の配列から取り出す
-        $('.image__left').css('background-image',selectedImg); // cssにランダムに選ばれた画像を背景設定する
-      };
-      setInterval(backgroundRandom, 4000);  // 4000msごとにランダム切り替えを繰り返す
+      let backgroundRandom = function(){
+      let number = Math.floor(Math.random() * images.length); // imagesの数値を算出
+      let selectedImg = images[number]; // 算出された数値を元に、1行目の配列から取り出す
+      $('.image__left').css('background-image',selectedImg).fadeIn(speed);
+      $('.image__left').css('transition', '1s');
+        // cssにランダムに選ばれた画像を背景設定する
+     };
+     setInterval(backgroundRandom, 4000).fadeIn(speed);  // 4000msごとにランダム切り替えを繰り返す
     });
     
 </script>
@@ -84,7 +87,7 @@
     </div>
     <div class="first__view__box">
      <h3 class="site__name">TAKEO<span>OFFCIAL<span></h3>
-     <p>TAKEOのオフィシャルサイト<br>
+     <p>TAKEOのオフィシャルファンサイトを開設しました！<br>
          プライベートショットを公開します！</p>
     </div>
     <div class="talent__name__box">
@@ -170,7 +173,7 @@
   </main>
   <footer>
    <div class="footer__list">
-    <h2>TAKEO OFFICAL SITE </h2>
+    <h2>TAKEO OFFICAL FAN SITE </h2>
     <p>©︎2021 TAKEO OFFCIAL All Rights Reserved.</p>
    </div>
   </footer>

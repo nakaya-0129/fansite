@@ -52,8 +52,17 @@ header .header__bar .header__content .header__lists{
 }
 
 header .header__bar .header__content .header__lists li{
-  font-size:10px;
+  font-size:16px;
   margin-right:110px;
+}
+header .header__bar .header__content .header__lists li:hover{
+  animation: fontAnimation 0.2s;
+  animation-fill-mode:forwards;
+}
+@keyframes fontAnimation{
+  100%{
+     color:#f680fc;
+   }
 }
 header .header__bar .header__content .header__lists li:last-of-type{
   margin-right:0px;
@@ -80,7 +89,7 @@ header .header__bar .header__menu__navi{
   width:50%;
    height:520px;
    margin-left:6%;
-   background-image:url('../images/img6.jpg');
+   background-image:url('../images/img35.jpg');
    background-position:center center;
    background-size:cover;
    background-repeat:no-repeat;
@@ -97,6 +106,7 @@ header .header__bar .header__menu__navi{
   background-position:center center;
   background-size:cover;
   animation:imgAnimation 4000ms infinite;
+  transition: opacity 0.5s;
 }
 @keyframes imgAnimation{
   50%{

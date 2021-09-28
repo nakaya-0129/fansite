@@ -51,9 +51,19 @@ header .header__bar .header__content .header__lists{
 }
 
 header .header__bar .header__content .header__lists li{
-  font-size:10px;
+  font-size:16px;
   margin-right:110px;
 }
+ header .header__bar .header__content .header__lists li:hover{
+  animation: fontAnimation 0.2s;
+  animation-fill-mode:forwards;
+}
+@keyframes fontAnimation{
+   100%{
+     color:#f680fc;
+    }
+}
+
 header .header__bar .header__hidden__content{
   display:none;
   visibility:hidden;  
@@ -343,7 +353,7 @@ main .blog__poto__box .blog__poto__index li .blog__story {
    display:-webkit-box;
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
-}
+}    
 main .blog__contents .blog__poto__box .blog__poto__index .menu__box.outview{
   display:none;
   opacity:0;
@@ -641,9 +651,9 @@ header .header__bar .header__hidden__content .humburger__menu .humburger__top{
   margin-top:2vh;
 }
 header .header__bar .header__hidden__content .humburger__menu.active .humburger__bottom{
-  transform: translateY(0px) rotate(315deg);
+  transform: translateY(-4px) rotate(310deg);
   transition-duration:0.5s;
-  width:30px;
+  width:40px;
 }    
 
 #first__view .image__content .image__left{
@@ -795,6 +805,7 @@ footer .footer__list h2{
 header .header__bar .header__hidden__content .humburger__menu.active .humburger__bottom{
   transform: translateY(-10px) rotate(315deg);
   transition-duration:0.5s;
+  width:30px;
 }    
 header .header__bar .header__hidden__content .humburger__menu.active .humburger__top{
   transform: translateY(10px) rotate(-315deg);

@@ -51,9 +51,19 @@ header .header__bar .header__content .header__lists{
 }
 
 header .header__bar .header__content .header__lists li{
-  font-size:10px;
+  font-size:16px;
   margin-right:110px;
 }
+ header .header__bar .header__content .header__lists li:hover{
+  animation: fontAnimation 0.2s;
+  animation-fill-mode:forwards;
+}
+ @keyframes fontAnimation{
+   100%{
+      color:#f680fc;
+  }
+}
+
 header .header__bar .header__hidden__content{
   display:none;
   visibility:hidden;  
@@ -286,8 +296,14 @@ footer .footer__list h2{
   color:#fff;
   text-align:center;
   padding-top:150px;
+  margin-bottom:5px;
 }
-   
+footer .footer__list p{
+  font-size:12px;
+  color:#f4ebeb;
+  text-align:center;
+  opacity:0.6;
+}       
 @media screen and (max-width:1060px){
 
 }    
