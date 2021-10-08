@@ -29,6 +29,11 @@
       $(".join__btn").removeClass("active");      
      });
    });
+$(function(){
+    $(".view__btn").on("click",function(){
+      $(".hidden__nav").toggleClass("show").css('transition','ease-out 0.5s');
+    });
+   });
 
   let images = [ 'url(static/images/img8.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img32.jpg)','url(static/images/img13.jpg)','url(static/images/img4.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)', 'url(static/images/img31.jpg)','url(static/images/img29.jpg)','url(static/images/img33.jpg)'];  // ランダム表示させたい画像のパス
   let speed= 2000;
@@ -155,8 +160,52 @@
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
       </ul>
+      <ul class="hidden__nav">
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
+        <p class="blog__title">in 草津</p>
+        <p class="blog__story">草津温泉に行きました</p>
+        <p class="blog__day">2021.07.16</p>
+        <div class="event__tag"><p>旅行</p></div></a>
+       </li>
+      </ul>
       <div class="view__btn">
-       <h3><a href="templates/blog_list.html">VIEW ALL<span>><span></a></h3>
+       <h3>VIEW ALL<span>><span></a></h3>
       </div>
      </div>
     </div>
