@@ -32,9 +32,15 @@
 $(function(){
     $(".view__btn").on("click",function(){
       $(".hidden__nav").toggleClass("show").css('transition','ease-out 0.5s');
-    });
-   });
 
+      if($(this).text()==='CLOSE'){
+          $(this).text('VIEW ALL');
+      }else{
+          $(this).text('CLOSE');
+      }
+   });
+});    
+    
   let images = [ 'url(static/images/img8.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img32.jpg)','url(static/images/img13.jpg)','url(static/images/img4.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)', 'url(static/images/img31.jpg)','url(static/images/img29.jpg)','url(static/images/img33.jpg)'];  // ランダム表示させたい画像のパス
   let speed= 2000;
     $(function(){
@@ -83,6 +89,22 @@ $(function(){
     </div>
    </header>   
    <div id="first__view">
+    <div class="profile__box">
+      <ul class="profile__nav">
+        <li class="profile__img">
+        </li>
+        <li>BLOOD TYPE: A型</li>
+        <li>BIRTHDAY: 1/25日</li>
+        <li>CONSTELLATION: 水瓶座</li>
+        <li>HEIGTH: 170cm</li>
+        <li>BIRTHPLACE: 埼玉県</li>
+        <li>HOBBY: 旅行・音楽・車</li>
+        <li>FAVORITE: TWICE・ヒゲダン・ディズニー</li>
+        <li>FOOD: 甘いもの・天ぷら・焼肉（食べ放題のみ）</li>
+        <li>MOTION: 山登り・ランニング・筋トレ（ほどほどに）</li>
+        <li>RESPECT: 工藤静香・木村拓哉・両親</li>
+      </ul>
+    </div>
     <div class="image__content">
       <div class="image__left"></div>
       <div class="image__right"></div>
@@ -127,7 +149,7 @@ $(function(){
         <p class="topic__day">2021.10.14</p>
         <p class="topic__content">Takeo offical sate開設！</p>
        </li></a>
-       <div class="view__btn"><a href="#">VIEW MORE<span>></span></a></div>
+       <div class="more__btn"><a href="#">VIEW MORE<span>></span></a></div>
       </ul>
      </div>
    </div>
@@ -143,7 +165,7 @@ $(function(){
         <p class="blog__title">IN沖縄</p>
         <p class="blog__story">沖縄のスタバで撮りました！</p>
         <p class="blog__day">2021.07.18</p>
-        <div class="jemini__tag"><p>takestaguram</p></div></a>
+        <div class="insta__tag"><p>takestaguram</p></div></a>
        </li>
        <li>
         <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img4.jpg);"></span>
@@ -162,50 +184,50 @@ $(function(){
       </ul>
       <ul class="hidden__nav">
        <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img13.jpg);"></span>
+        <p class="blog__title">愛車公開</p>
+        <p class="blog__story">運転が趣味なので遠出もOK!</p>
+        <p class="blog__day">2021.08.16</p>
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
        <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img3.jpg);"></span>
+        <p class="blog__title">in 沖縄</p>
+        <p class="blog__story">沖縄の日差しを感じて</p>
+        <p class="blog__day">2021.07.18</p>
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
        <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img5.jpg);"></span>
+        <p class="blog__title">in 千葉</p>
+        <p class="blog__story">インスタ映え</p>
+        <p class="blog__day">2021.07.14</p>
+        <div class="event__tag"><p>インスタ</p></div></a>
+       </li>
+       <li>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img11.jpg);"></span>
+        <p class="blog__title">in 海外</p>
+        <p class="blog__story">海外旅行もします。</p>
+        <p class="blog__day">2021.01.20</p>
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
        <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img17.jpg);"></span>
+        <p class="blog__title">夢のつり橋</p>
+        <p class="blog__story">落ちないように気を付けないと（笑）</p>
+        <p class="blog__day">2021.09.16</p>
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
        <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
-        <div class="event__tag"><p>旅行</p></div></a>
-       </li>
-       <li>
-        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img9.jpg);"></span>
-        <p class="blog__title">in 草津</p>
-        <p class="blog__story">草津温泉に行きました</p>
-        <p class="blog__day">2021.07.16</p>
+        <a href="templates/blog_list.html"><p class="blog__image" style="background-image:url(static/images/img26.jpg);"></span>
+        <p class="blog__title">in 鹿児島</p>
+        <p class="blog__story">夏は海！</p>
+        <p class="blog__day">2021.08.01</p>
         <div class="event__tag"><p>旅行</p></div></a>
        </li>
       </ul>
       <div class="view__btn">
-       <h3>VIEW ALL<span>><span></a></h3>
+       <h3>VIEW ALL</h3>
       </div>
      </div>
     </div>
