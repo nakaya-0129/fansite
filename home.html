@@ -14,7 +14,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="static/css/reset.css" media="all">
   <link rel="stylesheet" href="static/css/style.css" media="all">
-
+ <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <script>
   $(function(){
     $(".humburger__menu").on("click",function(){
@@ -40,7 +40,13 @@ $(function(){
       }
    });
 });    
-    
+$(function(){
+    $(".slide__arrow").on("click",function(){
+        $(".image__content").toggleClass("move").css('transition','ease-in 0.5s');
+        $(".first__view__box").toggleClass("delete");
+        $(".talent__name__box").toggleClass("delete");
+    });
+ });    
   let images = [ 'url(static/images/img8.jpg)', 'url(static/images/img11.jpg)', 'url(static/images/img5.jpg)','url(static/images/img32.jpg)','url(static/images/img13.jpg)','url(static/images/img4.jpg)','url(static/images/img1.jpg)','url(static/images/img16.jpg)','url(static/images/img17.jpg)','url(static/images/img18.jpg)','url(static/images/img19.jpg)', 'url(static/images/img31.jpg)','url(static/images/img29.jpg)','url(static/images/img33.jpg)'];  // ランダム表示させたい画像のパス
   let speed= 2000;
     $(function(){
@@ -67,8 +73,7 @@ $(function(){
       <ul class="header__lists">
        <li><a href="home.html">TOP</a></li>
        <li><a href="templates/blog_list.html">BLOG</a></li>
-       <li><a href="#">LOOK BOOK</a></li>
-       <li><a href="templates/login.html">LOGIN</a></li>
+       <li class="sn__gruop"><a href="https://www.instagram.com/takestagram2525/?hl=ja"><i class="fab fa-instagram"></i>TAKEsutagram</a> / <span><a href="https://www.youtube.com/channel/UCZB-lAwzgbcv-FeYIOLUJdw"><i class="fab fa-youtube"></i>YOUTUBE</a></span></li>
       </ul>
      </div>     
      <div class="header__hidden__content">
@@ -82,8 +87,8 @@ $(function(){
        <ul class="navi__menu">
         <li class="navi__item"><a href="home.html">TOP</a></li>
         <li class="navi__item"><a href="templates/blog_list.html">BLOG</a></li>
-        <li class="navi__item"><a href="#">LOOK BOOK</a></li>
-        <li class="navi__item"><a href="templates/login.html">LOGIN</a></li>
+        <li class="navi__item"><a href="https://www.instagram.com/takestagram2525/?hl=ja"><i class="fab fa-instagram"></i>TAKESUTGRAM</a></li>
+        <li class="navi__item"><a href="https://www.youtube.com/channel/UCZB-lAwzgbcv-FeYIOLUJdw"><i class="fab fa-youtube"></i>YOUTUBE</a></li>
        </ul>
      </div>
     </div>
@@ -91,18 +96,12 @@ $(function(){
    <div id="first__view">
     <div class="profile__box">
       <ul class="profile__nav">
-        <li class="profile__img">
-        </li>
-        <li>BLOOD TYPE: A型</li>
-        <li>BIRTHDAY: 1/25日</li>
-        <li>CONSTELLATION: 水瓶座</li>
-        <li>HEIGTH: 170cm</li>
-        <li>BIRTHPLACE: 埼玉県</li>
-        <li>HOBBY: 旅行・音楽・車</li>
-        <li>FAVORITE: TWICE・ヒゲダン・ディズニー</li>
-        <li>FOOD: 甘いもの・天ぷら・焼肉（食べ放題のみ）</li>
-        <li>MOTION: 山登り・ランニング・筋トレ（ほどほどに）</li>
-        <li>RESPECT: 工藤静香・木村拓哉・両親</li>
+        <li>血液型:<span>A型</span></li>
+        <li>誕生日:<span>1/25日</span></li>
+        <li>趣味:<span>旅行・音楽・車</span></li>
+        <li>マイブーム:<span>K-POP・ヒゲダン・ディズニー</span></li>
+        <li>好きなもの:<span>甘いもの・天ぷら・焼肉（食べ放題のみ</span></li>
+        <li>運動:<span>山登り・ランニング・筋トレ（ほどほどに)</span></li>
       </ul>
     </div>
     <div class="image__content">
@@ -156,8 +155,8 @@ $(function(){
    <div class="blog__contents">
     <div class="blog__box">
       <div class="blog__top__title">
-       <h2>BLOG</h2>
-       <p>TAKEO OFFICAL BLOG</p>
+       <h2><a href="templates/blog_list.html">BLOG</h2>
+       <p>TAKEO OFFICAL BLOG</a></p>
       </div>
       <ul class="blog__lists">
        <li>
@@ -233,12 +232,12 @@ $(function(){
     </div>
     <div class="funclub__box">
      <div class="funclub__sentence">
-      <h2>Takeo FAN CLUB 新規入会受付中！</h2>
-      <p class="top__sentence">Takeoファンクラブでは、ご入会いただきますと、限定ブログのほか、</p>
-      <p class="bottom__sentence">様々な会員限定コンテンツをお楽しみいただけます！</p>
+      <h2>Takesutgramをフォローしよう！</h2>
+      <p class="top__sentence">Takestagramをよろしくお願いします。</p>
+      <p class="bottom__sentence">YOUTUBEも不定期で更新しています！</p>
      </div>
 　    <div class="join__btn">
-       <p><a href="templates/member.html">ご入会はこちら</a></p>
+       <p><a href="https://www.instagram.com/takestagram2525/?hl=ja">Takesutagrm</a></p>
       </div>    
     </div>
   </main>

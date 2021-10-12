@@ -59,6 +59,9 @@ header .header__bar .header__content .header__lists li:hover{
   animation: fontAnimation 0.2s;
   animation-fill-mode:forwards;
 }
+header .header__bar .header__content .header__lists .sn__gruop:hover{
+  animation:none;
+}    
 @keyframes fontAnimation{
   100%{
      color:#f680fc;
@@ -82,29 +85,24 @@ header .header__bar .header__menu__navi{
 }
 #first__view .profile__box{
   width:50%;
-  height:520px;
+  height:0px;
+  margin-left:6%;
   position:relative;
-  z-index:-10;
+  z-index:-1;
 }
 #first__view .profile__box .profile__nav{
   width:100%;
   height:100%;
-  font-size:14px;
+  font-size:12px;
   display:flex;
   flex-direction:column;
-}
-#first__view .profile__box .profile__nav .profile__img{
-  width:200px;
-  height:200px;
-  margin:0 auto;
-  background-image:url('..images/img1');
-  background-position:center center;
-  background-size:cover;
-  background-repeat:no-repeat;
 }
 #first__view .profile__box .profile__nav li{
   margin-left:20px;
   margin-top:50px;
+}
+#first__view .profile__box .profile__nav li span{
+  margin-left:10px;
 }
 #first__view .image__content{
   max-width:2000px;
@@ -122,6 +120,16 @@ header .header__bar .header__menu__navi{
    z-index:-1;
    overflow:hidden;
  }
+#first__view .image__content.move{
+   animation:moveAnimation 0.5s; 
+   animation-fill-mode:forwards;
+   overflow:hidden;
+}
+@keyframes moveAnimation{
+   100%{
+      transform:translateX(400px);
+   }
+}
 #first__view .image__content .image__left::before{
   content:'';
   display:inline-block;
@@ -166,6 +174,9 @@ header .header__bar .header__menu__navi{
   width:480px;
   height:250px;
 }
+#first__view .first__view__box.delete{
+  display:none;
+}
 #first__view .talent__name__box{
   position:absolute;
   top:120px;
@@ -174,6 +185,9 @@ header .header__bar .header__menu__navi{
   right:0px;
   height:100px;
   width:400px;
+}
+#first__view .talent__name__box.delete{
+  display:none;
 }
 #first__view .talent__name__box .talent__name{
   font-size:60px;
