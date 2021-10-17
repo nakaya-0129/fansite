@@ -1018,6 +1018,10 @@ main .funclub__box .funclub__sentence h2{
 main .blog__contents .blog__box .blog__lists li {
   width:70%;
 }   
+main .blog__contents .blog__box .hidden__nav {
+  width:120%;
+  margin-left:-50px;
+}    
 main .funclub__box .funclub__sentence p{
   font-size:13px;    
 }
@@ -1085,6 +1089,10 @@ main .topic__news .topic__info .topic__info__lists .view__btn{
  right:35px;
 }
 
+main .blog__contents .blog__box .hidden__nav{
+  margin-left:0px;
+  width:100%;
+}    
 main .blog__contents .blog__box .blog__lists li{
   height:300px;
   width:80%;
